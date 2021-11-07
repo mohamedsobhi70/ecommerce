@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,500;1,700&display=swap");
+* {
+  font-family: Roboto;
+}
+body {
+  background-color: #eee;
+}
+.bg-d {
+  background-color: #ddd;
+}
+.bg-e {
+  background-color: #eee;
+}
+.text-12 {
+  font-size: 12px;
+}
+.border-bottom-warning {
+  border-bottom: 2px solid #ffc107;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.products {
+  .container {
+    border-radius: 20px;
+    padding-top: 100px;
+    .product-box {
+      &:hover {
+        .product-img {
+          img {
+            transform: translateX(-50%) scale(1.1);
+            opacity: 1;
+          }
+        }
+      }
+      .product-img {
+        img {
+          left: 50%;
+          top: -150%;
+          transform: translateX(-50%);
+          transition: 0.5s;
+          opacity: .75;
+        }
+      }
+    }
+    .hot-products {
+      .product-hot-box {
+        img {
+          transition: 0.5s;
+        }
+        &:hover {
+          img {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+    .new-products {
+      .product-new-box {
+        img {
+          transition: 0.5s;
+        }
+        &:hover {
+          img {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  .rotate {
+    transform: rotateY(180deg);
+  }
+}

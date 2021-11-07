@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,500;1,700&display=swap");
+* {
+  font-family: Roboto;
+}
+
+body {
+  background-color: #eee;
+}
+
+.bg-d {
+  background-color: #ddd;
+}
+
+.bg-e {
+  background-color: #eee;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.border-bottom-warning {
+  border-bottom: 2px solid #ffc107;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.products .container {
+  border-radius: 20px;
+  padding-top: 100px;
+}
+
+.products .container .product-box:hover .product-img img {
+  -webkit-transform: translateX(-50%) scale(1.1);
+          transform: translateX(-50%) scale(1.1);
+  opacity: 1;
+}
+
+.products .container .product-box .product-img img {
+  left: 50%;
+  top: -150%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: .75;
+}
+
+.products .container .hot-products .product-hot-box img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products .container .hot-products .product-hot-box:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.products .container .new-products .product-new-box img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products .container .new-products .product-new-box:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+footer .rotate {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */
