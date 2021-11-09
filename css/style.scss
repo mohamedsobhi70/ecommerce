@@ -17,6 +17,20 @@ body {
 .border-bottom-warning {
   border-bottom: 2px solid #ffc107;
 }
+.owl-nav {
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .owl-prev {
+    left: 5px;
+  }
+  .owl-next {
+    right: 5px;
+  }
+}
 a {
   text-decoration: none;
   color: #222;
@@ -40,7 +54,7 @@ a {
           top: -150%;
           transform: translateX(-50%);
           transition: 0.5s;
-          opacity: .75;
+          opacity: 0.75;
         }
       }
     }

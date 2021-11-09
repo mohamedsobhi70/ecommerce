@@ -3,7 +3,7 @@
 $(".owl-carousel").owlCarousel({
     loop:true,
     margin:20,
-    nav:false,
+    nav:true,
     autoplay:true,
     autoplayTimeout:1500,
     dots:false,
@@ -19,3 +19,5 @@ $(".owl-carousel").owlCarousel({
         },
     }
 });
+document.querySelector('.owl-nav .owl-prev').innerHTML = "<";
+document.querySelector('.owl-nav .owl-next').innerHTML = ">";

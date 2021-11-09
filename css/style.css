@@ -23,6 +23,22 @@ body {
   border-bottom: 2px solid #ffc107;
 }
 
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev {
+  left: 5px;
+}
+
+.owl-nav .owl-next {
+  right: 5px;
+}
+
 a {
   text-decoration: none;
   color: #222;
@@ -46,7 +62,7 @@ a {
           transform: translateX(-50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .products .container .hot-products .product-hot-box img {
